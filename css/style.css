@@ -1,0 +1,81 @@
+body{
+    background-color: #cfcfc233;
+}
+.content{
+    margin: 100px auto;
+    max-width: 60%;
+    background-color: #fff;
+    padding: 10px;
+}
+input:active{
+    outline: none;
+    border: 0;
+}
+input:valid{
+    border: 3px solid rgb(31, 165, 26);
+    /* background-color: rgb(64, 119, 145,0.1); */
+}
+input:invalid{
+    border: 3px solid rgb(228, 53, 9);
+    /* background-color: rgb(185, 53, 20,0.1); */
+}
+
+.errFormato{
+    padding: 10px;
+    background-color: rgb(228, 53, 9,0.3);
+    transition: all 0.5s ease-out;
+}
+.success{
+    padding: 10px;
+    /* background-color: rgb(31, 165, 26,0.3); */
+    transition: all 0.5s ease-out;
+}
+.btn-b{
+    float: right;
+    font-size: 20px;
+    background-color: rgb(31, 165, 26,0.6);
+    color: #fff;
+    padding: 5px;
+}
+.btn-b:hover{
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.5s ease-out;
+    background-color: rgb(31, 165, 26,0.8);
+}
+.btn-submit{
+    outline: none;
+    border: 0;
+    font-size: 20px;
+    background-color: rgb(31, 165, 26,0.6);
+    color: #fff;
+    padding: 5px;
+}
+.btn-submit:hover{
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.5s ease-out;
+    background-color: rgb(31, 165, 26,0.8);
+}
+.info img{
+    width: 49%;
+    height: 200px;
+    object-fit: cover;
+}
+.labelCode{
+    background-color: rgb(31, 165, 26,0.6);
+    margin: 10px;
+    height: 30px;
+}
+.code{
+    background-color: rgb(31, 165, 26,0.3);
+}
+.code:active{
+    background-color: rgb(31, 165, 26,0.1);
+}
+.code:valid{
+    border: 0px;
+}
+.btn-qr:valid{
+    border: none;
+}
