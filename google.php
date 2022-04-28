@@ -23,7 +23,7 @@
     <title>Autenticación Usuario</title>
 </head>
 <body>
-    <main class="container">
+    <main class="">
         <section class="content">
                 <div class="qr">
                 <img src="<?php echo $enlace;?>" alt="">

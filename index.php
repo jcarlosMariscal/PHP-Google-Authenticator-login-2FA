@@ -16,27 +16,36 @@
     <title>Autenticación Usuario</title>
 </head>
 <body>
-    <main class="container">
+    <main>
         <section class="content">
-            <form action="index.php" method="POST">
-                <div class="form-group row">
-                    <label for="nombre" class="col-sm-2 col-form-label">Nombre</label>
+          <div class="info-login">
+            <h3>Log in</h3>
+            <p>Welcome back! Login to access your security dashboard.</p>
+            <div class="btn-login">
+              <a href="index.html">Atrás</a>
+            </div>
+          </div>
+          <div class="formulario">
+          <form action="index.php" method="POST">
+                <div class="nombre">
+                    <!-- <label for="nombre" class="col-sm-2 col-form-label">Nombre</label> <br> -->
                     <div class="col-sm-10">
-                      <input type="text" class="form-control" id="nombre" autocomplete="off" name="nombre" placeholder="Nombre" minlength="5" required pattern="[A-Za-zÀ-ÿ\s]{5,30}">
+                      <input type="text" class="in" id="nombre" autocomplete="off" name="nombre" placeholder="Nombre" minlength="5" required pattern="[A-Za-zÀ-ÿ\s]{5,30}">
                     </div>
                   </div>
-                  <div class="form-group row">
-                    <label for="contra" class="col-sm-2 col-form-label">Contraseña</label>
+                  <div class="pass">
+                    <!-- <label for="contra" class="col-sm-2 col-form-label">Contraseña</label> <br> -->
                     <div class="col-sm-10">
-                      <input type="password" class="form-control" id="contra" autocomplete="off" name="contra" placeholder="Contraseña" minlength="8" required pattern="[A-Za-z0-9]{8,16}">
+                      <input type="password" class="in" id="contra" autocomplete="off" name="contra" placeholder="Contraseña" minlength="8" required pattern="[A-Za-z0-9]{8,16}">
                     </div>
                   </div>
-                  <div class="form-group row">
+                  <div class="">
                     <div class="col-sm-10">
                       <button type="submit" class="btn-submit">Iniciar sesión</button>
                     </div>
                   </div>
             </form>
+          </div>
             <?php
               require "login.php";
             ?>

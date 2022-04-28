@@ -1,23 +1,120 @@
 body{
-    background-color: #cfcfc233;
+    font-family: "Moderat",Arial,Helvetica,sans-serif;
+}
+main{
+    background-color: #019267;
+    height: 100vh;
 }
 .content{
-    margin: 100px auto;
-    max-width: 60%;
-    background-color: #fff;
+    padding: 100px;
+}
+.title{
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+}
+.info{
+    margin: 10px auto;
+    width: 80%;
     padding: 10px;
+    color: #fff;
+}
+.info p{
+    font-size: 20px;
+    text-align: justify;
+}
+.btn-login{
+    text-align: center;
+    margin: 50px;
+}
+.btn-login a{
+    background-color: #00C897;
+    padding: 10px 20px 10px 20px;
+    font-size: 20px;
+    border-radius: 15px;
+    color: #fff;
+    font-weight: bold;
+}
+.btn-login a:hover{
+    background-color: #FFD365;
+    transition: all 0.2s ease-out;
+    text-decoration: none;
+}
+.content article{
+    margin: 10px auto;
+    width: 80%;
+    padding: 10px;
+    color: #Fff;
+}
+.content article img{
+    width: 600px;
+    height: 300px;
+    margin-left: 20px;
+    object-fit: cover;
+    float: right;
+}
+.content article p{
+    text-align: justify;
+    font-size: 18px;
+}
+
+.info-login{
+    text-align: center;
+    color: #fff;
+    margin-bottom: 50px;
+    /* background-color: #FFD365; */
+}
+.info-login h3{
+    font-size: 50px;
+    font-weight: bold;
+}
+.info-login p{
+    font-size: 18px;
+}
+
+.formulario form{
+    text-align: center;
+    /* background-color: aqua; */
+}
+.content form{
+    /* text-align: center; */
+    color: #fff;
+    padding: 20px;
+    margin: 50px auto;
+    max-width: 50%;
+}
+.nombre input, .pass input{
+    font-size: 20px;
+    background-color: #019267;
+    margin-left: 60px;
+    margin-bottom: 60px;
+    color: #fff;
+    outline: none;
+    border: 0;
+    width: 100%;
+}
+.nombre input::placeholder,.pass input::placeholder{
+    color: #00C897;
+}
+.in:focus{
+    background: #019267;
+    border: 0;
+    border-bottom: 3px solid #fff;
+    outline: none;
+    color: #fff;
 }
 input:active{
     outline: none;
     border: 0;
 }
 input:valid{
-    border: 3px solid rgb(31, 165, 26);
-    /* background-color: rgb(64, 119, 145,0.1); */
+    color: rgb(125, 204, 228);
+    border-bottom: 3px solid rgb(125, 204, 228);
 }
 input:invalid{
-    border: 3px solid rgb(228, 53, 9);
-    /* background-color: rgb(185, 53, 20,0.1); */
+    color: rgb(206, 128, 109);
+    border-bottom: 3px solid rgb(206, 128, 109);
 }
 
 .errFormato{
@@ -44,18 +141,21 @@ input:invalid{
     background-color: rgb(31, 165, 26,0.8);
 }
 .btn-submit{
+    margin-left: 60px;
     outline: none;
+    width: 100%;
     border: 0;
+    background-color: #00C897;
+    padding: 10px 20px 10px 20px;
     font-size: 20px;
-    background-color: rgb(31, 165, 26,0.6);
+    border-radius: 15px;
     color: #fff;
-    padding: 5px;
+    font-weight: bold;
 }
 .btn-submit:hover{
-    text-decoration: none;
     color: #fff;
+    background-color: #FFD365;
     transition: all 0.5s ease-out;
-    background-color: rgb(31, 165, 26,0.8);
 }
 .info img{
     width: 49%;
