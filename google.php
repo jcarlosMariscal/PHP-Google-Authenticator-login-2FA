@@ -3,7 +3,7 @@
     declare(strict_types=1);
     require 'vendor/autoload.php';
     $secret = 'XVQ2UIGO75XRUKJO';
-    $enlace = \Sonata\GoogleAuthenticator\GoogleQrUrl::generate('', $secret, 'AutenticacionUsuario');
+    $enlace = \Sonata\GoogleAuthenticator\GoogleQrUrl::generate('mar', $secret, 'AutenticacionUsuario');
     $g = new \Sonata\GoogleAuthenticator\GoogleAuthenticator();
 
     session_start();
